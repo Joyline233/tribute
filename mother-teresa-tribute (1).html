@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Tribute to Mother Teresa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #fdf0f5;
+            color: #5c374c;
+            line-height: 1.7;
+        }
+
+        /* ---------- HEADER ---------- */
+        header {
+            background: linear-gradient(135deg, #d63384 0%, #f065a8 100%);
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+
+        header p {
+            font-style: italic;
+            font-size: 1.2em;
+            color: #ffe4f0;
+        }
+
+        /* ---------- NAVIGATION ---------- */
+        nav {
+            background-color: #c2187b;
+            text-align: center;
+            padding: 12px 0;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-family: Arial, sans-serif;
+            font-size: 0.95em;
+            letter-spacing: 1px;
+            padding: 6px 4px;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #ffd6e8;
+        }
+
+        /* ---------- MAIN LAYOUT ---------- */
+        main {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            background-color: #fff7fa;
+            margin-bottom: 30px;
+            padding: 35px 40px;
+            border-radius: 8px;
+            border: 1px solid #f8d7e8;
+            box-shadow: 0 2px 8px rgba(214, 51, 132, 0.10);
+        }
+
+        section h2 {
+            color: #b0226d;
+            border-bottom: 3px solid #f3a8cd;
+            display: inline-block;
+            padding-bottom: 6px;
+            margin-bottom: 18px;
+            font-size: 1.6em;
+        }
+
+        section strong {
+            color: #a11e60;
+        }
+
+        /* ---------- IMAGE ---------- */
+        .photo-container {
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        .photo-container img {
+            max-width: 300px;
+            width: 100%;
+            border-radius: 10px;
+            border: 6px solid #f3a8cd;
+            box-shadow: 0 4px 12px rgba(214, 51, 132, 0.25);
+        }
+
+        .caption {
+            font-style: italic;
+            color: #a86b8c;
+            margin-top: 10px;
+            font-size: 0.95em;
+        }
+
+        /* ---------- TIMELINE ---------- */
+        .timeline {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .timeline li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 16px;
+        }
+
+        .timeline li::before {
+            content: "✦";
+            color: #e0559a;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .timeline strong {
+            color: #b0226d;
+        }
+
+        /* ---------- QUOTE ---------- */
+        blockquote {
+            background-color: #fde9f2;
+            border-left: 5px solid #e0559a;
+            margin: 20px 0;
+            padding: 18px 25px;
+            font-style: italic;
+            font-size: 1.15em;
+            color: #7a3b62;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* ---------- LISTS ---------- */
+        ul.values {
+            margin: 10px 0 0 20px;
+        }
+
+        ul.values li {
+            margin-bottom: 8px;
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background-color: #d63384;
+            color: #ffe4f0;
+            text-align: center;
+            padding: 25px 20px;
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+        }
+
+        footer span {
+            color: #ffd6e8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="halo">✝</div>
+        <h1>Mother Teresa</h1>
+        <p>"Saint of the Gutters" — A Tribute to a Life of Compassion</p>
+    </header>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#legacy">Legacy</a>
+    </nav>
+
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About Her</h2>
+            <div class="photo-container">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d6/Mother_Teresa_1.jpg" alt="Portrait of Mother Teresa">
+                <p class="caption">Saint Teresa of Calcutta (1910 – 1997)</p>
+            </div>
+            <p>
+                Mother Teresa, born <strong>Agnes Gonxha Bojaxhiu</strong> on August 26, 1910, in Skopje,
+                North Macedonia, was a Roman Catholic nun and missionary who devoted her entire life
+                to serving the poorest of the poor. At the age of 18, she left her home to join the
+                Sisters of Loreto in Ireland, and later moved to India, where she taught for many years
+                before answering what she described as "a call within a call" — a divine instruction
+                to serve the dying and destitute on the streets of Calcutta (Kolkata).
+            </p>
+            <br>
+            <p>
+                In 1950, she founded the <strong>Missionaries of Charity</strong>, a congregation that grew
+                from 12 members to over 4,000 sisters running homes for people with HIV/AIDS, leprosy,
+                and tuberculosis, as well as orphanages, schools, and soup kitchens around the world.
+                Her selfless service earned her the <strong>Nobel Peace Prize in 1979</strong>, and she was
+                canonized as a saint by the Catholic Church in 2016.
+            </p>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline">
+            <h2>Life Timeline</h2>
+            <ul class="timeline">
+                <li><strong>1910</strong> — Born Agnes Gonxha Bojaxhiu in Skopje, Ottoman Empire (now North Macedonia).</li>
+                <li><strong>1928</strong> — Left home at 18 to join the Sisters of Loreto in Ireland.</li>
+                <li><strong>1929</strong> — Arrived in India, where she began her novitiate in Darjeeling.</li>
+                <li><strong>1937</strong> — Took her final vows and became "Mother Teresa".</li>
+                <li><strong>1948</strong> — Answered the "call within a call" and began working among the poor of Calcutta.</li>
+                <li><strong>1950</strong> — Founded the Missionaries of Charity.</li>
+                <li><strong>1952</strong> — Opened the first Home for the Dying (Nirmal Hriday) in Calcutta.</li>
+                <li><strong>1979</strong> — Awarded the Nobel Peace Prize.</li>
+                <li><strong>1997</strong> — Passed away on September 5 in Calcutta, India.</li>
+                <li><strong>2016</strong> — Canonized as Saint Teresa of Calcutta by Pope Francis.</li>
+            </ul>
+        </section>
+
+        <!-- Quotes Section -->
+        <section id="quotes">
+            <h2>In Her Own Words</h2>
+            <blockquote>
+                "If you can't feed a hundred people, then feed just one."
+            </blockquote>
+            <blockquote>
+                "Spread love everywhere you go. Let no one ever come to you without leaving happier."
+            </blockquote>
+            <blockquote>
+                "Not all of us can do great things. But we can do small things with great love."
+            </blockquote>
+        </section>
+
+        <!-- Legacy Section -->
+        <section id="legacy">
+            <h2>Her Legacy</h2>
+            <p>
+                Mother Teresa showed the world that true greatness lies in humility and service.
+                Her life reminds us that compassion needs no wealth, no power, and no fame —
+                only a willing heart. Today, the Missionaries of Charity continues her work in
+                over 130 countries, caring for the forgotten and the abandoned.
+            </p>
+            <br>
+            <p>She taught us timeless values:</p>
+            <ul class="values">
+                <li><strong>Compassion</strong> — See the dignity in every human being.</li>
+                <li><strong>Humility</strong> — Serve quietly, without seeking recognition.</li>
+                <li><strong>Perseverance</strong> — Keep giving even when the need feels endless.</li>
+                <li><strong>Love in action</strong> — Kindness is worth more than words.</li>
+            </ul>
+            <br>
+            <p>
+                She is the person I love most in history because she proved that one person's
+                love, practiced daily in small ways, can change the world.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <p>Created with love and respect <span>✦</span> A Tribute Page to Mother Teresa</p>
+    </footer>
+
+</body>
+</html>
